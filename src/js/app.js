@@ -35,8 +35,8 @@ function render(variables = {}) {
           <img src="${variables.avatarURL}" class="photo" />
           <h1>"${variables.name}"</h1>
           <h2>"${variables.lastName}"</h2>
-          <h3>"${variables.city}","${variables.state}"</h3>
-          <ul class="position-right">
+          <h3>"${variables.city}","${variables.country}"</h3>
+          <ul class="${variables.position}">
             <li><a href="https://twitter.com/4geeksacademy"><i class="fab fa-twitter"></i></a></li>
             <li><a href="https://github.com/4geeksacademy"><i class="fab fa-github"></i></a></li>
             <li><a href="https://linkedin.com/school/4geeksacademy"><i class="fab fa-linkedin"></i></a></li>
@@ -58,8 +58,7 @@ window.onload = function() {
     // this is the url for the profile avatar
     avatarURL: "https://randomuser.me/api/portraits/women/42.jpg",
     // social media bar position (left or right)
-    socialMediaPosition: "position-left",
-    // social media usernames
+    socialMediaPosition: "position-left", // social media usernames
     twitter: null,
     github: null,
     linkedin: null,
